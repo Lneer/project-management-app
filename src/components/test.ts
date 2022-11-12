@@ -1,9 +1,3 @@
-
 const func = () => {
-
-
-
-
-	console.log('hello');
-
-}
+  console.log('hello');
+};
