@@ -1,0 +1,40 @@
+@import '../../styles/colors.scss';
+@import '../../styles/utilities.scss';
+
+.new-card {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 36rem;
+    height: 14.3rem;
+    background-color: $secondary-light;
+    box-shadow: 0 1.2rem 2rem rgba(105, 117, 135, 0.15);
+    border-radius: 1.8rem;
+    padding: 3.2rem 1.8rem 2.5rem;
+    justify-content: space-between;
+    cursor: pointer;
+    @include respond(phone) {
+      width: 30rem;
+    }
+  }
+
+  &__heading {
+    text-align: start;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.2rem;
+    color: $primary-dark;
+    font-family: 'Roboto';
+    @include respond(phone) {
+      font-size: 2.8rem;
+    }
+  }
+
+  &__add-btn {
+    background: url('../../assets/icons/plus.svg');
+    width: 5rem;
+    height: 5rem;
+    align-self: flex-end;
+  }
+}

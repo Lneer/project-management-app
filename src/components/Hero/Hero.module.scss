@@ -1,0 +1,134 @@
+@import '../../styles/colors.scss';
+@import '../../styles/utilities.scss';
+.hero {
+  background: linear-gradient(180deg, $background-light-m -2.24%, $background-transparent 78.75%);
+  margin-top: -10rem;
+
+  &__container {
+    margin: 0 auto;
+    padding: 30rem 14rem 30rem;
+    max-width: 144rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(desktop) {
+      max-width: 128rem;
+      padding: 25rem 7rem 25rem;
+    }
+
+    @include respond(tablet-l) {
+      max-width: 102.4rem;
+      padding: 25rem 3.5rem 25rem;
+    }
+    @include respond(tablet-p) {
+      max-width: 76.8rem;
+      padding: 17rem 2rem 15rem;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    @include respond(phone) {
+      max-width: 42.5rem;
+      padding: 12rem 1rem 15rem;
+    }
+  }
+
+  &__content {
+    max-width: 54.2rem;
+    @include respond(desktop) {
+      max-width: 47rem;
+    }
+
+    @include respond(tablet-l) {
+      max-width: 37rem;
+    }
+    @include respond(tablet-p) {
+      max-width: 40rem;
+    }
+
+    @include respond(phone) {
+      max-width: 30rem;
+    }
+  }
+
+  &__heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.6rem;
+    line-height: 5.6rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2.3rem;
+
+    @include respond(tablet-l) {
+      font-size: 4rem;
+      line-height: 4.6rem;
+    }
+    @include respond(tablet-p) {
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    @include respond(phone) {
+      font-size: 3.6rem;
+      line-height: 4rem;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 5rem;
+    @include respond(tablet-l) {
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+    @include respond(tablet-p) {
+      margin-bottom: 3rem;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      letter-spacing: 0.8px;
+      font-family: 'Roboto';
+      color: $secondary-dark;
+
+      @include respond(tablet-l) {
+        line-height: 2rem;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 4rem;
+    @include respond(desktop) {
+      gap: 2rem;
+    }
+
+    @include respond(phone) {
+      gap: 1rem;
+    }
+  }
+
+  &__img {
+    background-image: url('../../assets/img/hero-img.svg');
+    background-size: cover;
+    width: 45.2rem;
+    height: 42.2rem;
+    @include respond(desktop) {
+      width: 40rem;
+      height: 38rem;
+    }
+    @include respond(tablet-l) {
+      width: 34rem;
+      height: 30rem;
+    }
+    @include respond(tablet-p) {
+      width: 27rem;
+      height: 25rem;
+    }
+  }
+}

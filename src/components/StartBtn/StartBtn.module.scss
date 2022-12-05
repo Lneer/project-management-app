@@ -1,0 +1,60 @@
+@import '../../styles/colors.scss';
+@import '../../styles/utilities.scss';
+.start-btn {
+  &__primary,
+  &__secondary {
+    border-radius: 0.4rem;
+    border: none;
+    padding: 1.6rem 0;
+    width: 21rem;
+    font-family: 'Roboto';
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+    text-align: center;
+
+    @include respond(tablet-l) {
+      width: 19rem;
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    @include respond(tablet-p) {
+      width: 19rem;
+      font-size: 1.8rem;
+      line-height: 2rem;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(1);
+    }
+  }
+
+  &__primary {
+    background: $btn-primary;
+    color: $primary-light;
+
+    &:hover {
+      background-color: $background-light-m;
+      color: $primary-dark;
+    }
+  }
+
+  &__secondary {
+    background: $btn-secondary;
+    color: $btn-primary;
+
+    &:hover,
+    &:active {
+      color: $btn-primary;
+    }
+  }
+}

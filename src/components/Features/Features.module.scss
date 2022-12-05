@@ -1,0 +1,92 @@
+@import '../../styles/colors.scss';
+@import '../../styles/utilities.scss';
+
+.features {
+  background: url('../../assets/img/wave2.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -15rem;
+
+  &__container {
+    margin: 0 auto;
+    padding: 30rem 12rem 15rem;
+    max-width: 144rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(desktop) {
+      max-width: 128rem;
+      padding: 25rem 7rem 20rem;
+    }
+
+    @include respond(tablet-l) {
+      max-width: 102.4rem;
+      padding: 25rem 3.5rem 18rem;
+    }
+
+    @include respond(tablet-p) {
+      max-width: 76.8rem;
+      padding: 25rem 2rem 15rem;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    @include respond(phone) {
+      max-width: 42.5rem;
+      padding: 25rem 1rem 15rem;
+    }
+  }
+
+  &__heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: $background-dark;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 8rem;
+
+    @include respond(desktop) {
+      margin-bottom: 6rem;
+    }
+
+    @include respond(tablet-l) {
+      font-size: 4rem;
+      line-height: 4.6rem;
+    }
+    @include respond(tablet-p) {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    @include respond(phone) {
+      font-size: 3.6rem;
+      line-height: 4rem;
+    }
+  }
+
+  &__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+    @include respond(desktop) {
+      margin-bottom: 6rem;
+    }
+
+    @include respond(tablet-l) {
+      margin-bottom: 5rem;
+    }
+
+    @include respond(tablet-p) {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import '../../styles/colors.scss';
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  min-height: 2rem;
+  border-radius: 1.8rem;
+  padding: 2rem 1.8rem;
+  position: relative;
+
+  &__false {
+    background-color: $primary-light;
+  }
+
+  &__true {
+    background-color: $background-light;
+  }
+
+  button {
+    align-self: end;
+    width: 10rem;
+  }
+}
+
+.task-header-container {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.task-header__title {
+  font-size: 2.4rem;
+}
+
+.task-description {
+  width: 100%;
+  word-wrap: break-word;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 18px;
+}
+
+.task-btn-edit {
+  background-image: url('../../assets/icons/edit.svg');
+  height: 24px;
+  width: 24px;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: 2rem 2rem;
+  transition: all 0.3s;
+  filter: invert(62%) sepia(13%) saturate(621%) hue-rotate(63deg) brightness(95%) contrast(86%);
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+  }
+}

@@ -1,0 +1,15 @@
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.btns-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+@media (max-width: 990px) {
+  .btns {
+    display: none;
+  }
+}
